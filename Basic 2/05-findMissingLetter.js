@@ -11,24 +11,23 @@
 //   }
 // }
 
-function findMissingLetter(arr){
-
+function findMissingLetter(arr) {
   let start = arr[0].charCodeAt(0);
 
-  for(let i = 0 ; i < arr.length ; i++){
+  for (let i = 0; i < arr.length; i++) {
     const current = arr[i].charCodeAt(0);
 
-    if(current - start > 1){
-      console.log(String.fromCharCode(start + 1))
+    if (current - start > 1) {
+      console.log(String.fromCharCode(start + 1));
       return;
     }
 
-    start = current
+    start = current;
   }
 
-  console.log(1)
-
+  console.log(1);
 }
 
+// findMissingLetter(["a", "b", "c", "d", "f"]);
 
-findMissingLetter(["a", "b", "c", "d", "f"]);
+findMissingLetter("abcdf");
