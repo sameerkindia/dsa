@@ -6,8 +6,6 @@ function findMissingLetter(str) {
 
     const currentCharCode = char.charCodeAt(0);
 
-    console.log(currentCharCode - prevCharCode > 1);
-
     return currentCharCode - prevCharCode > 1;
   })[0];
 
